@@ -21,4 +21,6 @@ vec[i] causes un defined behavior --> this is known as bracket notation
 ## Associative Containers
 Map/set: keys in sorted order, faster to iterate through a range of elements.
 Unordered map/set: faster to access individual elements
-
+<p>if there is a map lets say frequency, then to check whether a certain key exist inside that map or not we 
+can use frequency.count(key) to check that. since in map, we can only have one unique key so its answer will be 0
+or 1.
