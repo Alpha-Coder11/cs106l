@@ -25,8 +25,10 @@ Unordered map/set: faster to access individual elements
 can use frequency.count(key) to check that. since in map, we can only have one unique key so its answer will be 0
 or 1.
 Maps and sets are implemented under the hood using 
-binary trees
+binary trees </p>
+
 ## Iterators
+NOTE: A pointer is a type of a iterator
 We can't iterate over associative containers like 
 we iterate over vectors or deques (using for loop) 
 because map or set are not sequenced perperly, 
@@ -34,6 +36,9 @@ they are more of a un organised data containers
 Iterators allow iteration over any container 
 whether is ordered or not Iterators let us view a 
 non-linear collection in a linear manner Types of 
+There is a fucntion which returns the distance between begin to certain iterator. Since they are non contiguos so they are 
+not analagous to index which we have normally
+Map Iterators are slightly different since they contain both keys and values, its iterator is type of pair class
 Iterators:
 Input -> For sequential, singal-pass
 Read only i.e can only be dereferenced on right side of
@@ -49,7 +54,12 @@ Used in function such as reverse
 map and set
 Random Access iterator
 Same as bidirectional iterators except can be
-incremented or decremented by arbitrary amount 
-
-
+incremented or decremented by arbitrary amount.</p>
+## Template Functions
+* Implicit conversion -> is done at compile time
+* Question -> if we need to implement same function for different argument types <br> how will we do that without templates?<br>
+we Could do what is know as function overloading in which we create multiple instances <br>
+of the function with the same name and compiler will choose which function to call <br> based on the arguments passed.
+* You cannot use auto keyword in argument of functions
+* You need to redefine template header for each function you create, for class one you create a template, it can be used throughout the class. 
 
